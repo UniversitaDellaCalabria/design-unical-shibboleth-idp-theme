@@ -1,0 +1,210 @@
+<div class="it-header-wrapper">
+    <!-- Top row in header -->
+    <div class="it-header-slim-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="it-header-slim-wrapper-content">
+                        <a class="d-none d-lg-block navbar-brand">
+                            #springMessage("org.name")
+                        </a>
+                        #*
+                        <div class="nav-mobile">
+                            <nav>
+                                <a class="it-opener d-lg-none"
+                                   data-toggle="collapse"
+                                   href="#menu-principale"
+                                   role="button"
+                                   aria-expanded="false"
+                                   aria-controls="menu-principale">
+                                    <span>
+                                        <!-- Use Shibboleth organization name -->
+                                        #springMessage("org.name")
+                                    </span>
+                                    <svg class="icon">
+                                        <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-expand"></use>
+                                    </svg>
+                                </a>
+                                <div class="link-list-wrapper collapse" id="menu-principale">
+                                    <ul class="link-list">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2 Active</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="header-slim-right-zone">
+
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                   href="#"
+                                   data-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <span>ITA</span>
+                                    <svg class="icon d-none d-lg-block">
+                                        <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-expand"></use>
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="link-list-wrapper">
+                                                <ul class="link-list">
+                                                    <li><a class="list-item" href="#"><span>ITA</span></a></li>
+                                                    <li><a class="list-item" href="#"><span>ENG</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="it-access-top-wrapper">
+                                <button class="btn btn-primary btn-sm"
+                                        href="#" type="button">
+                                    Accedi
+                                </button>
+                            </div>
+                        </div>
+                        *#
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="it-nav-wrapper">
+        <div class="it-header-center-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="it-header-center-content-wrapper">
+                            <!-- Logo -->
+                            <div class="it-brand-wrapper">
+                                <a href="#">
+                                    <!-- Use Shibboleth logo -->
+                                    <img src="$request.getContextPath()#springMessage("idp.logo")"
+                                         alt="#springMessageText("idp.logo.alt-text", "logo")"
+                                         width="100%">
+                                    <!--
+                                    <svg class="icon">
+                                        <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-code-circle"></use>
+                                    </svg>
+
+                                    <div class="it-brand-text">
+                                        <h2 class="no_toc">
+                                            Nome Organizzazione
+                                        </h2>
+                                        <h3 class="no_toc d-none d-md-block">
+                                            Sottotitolo Organizzazione
+                                        </h3>
+                                    </div>
+                                    -->
+                                </a>
+                            </div>
+
+                            <!-- Social and Search -->
+                            <div class="it-right-zone">
+                                <div class="it-socials d-none d-md-flex">
+                                    <span>Seguici su</span>
+                                    <ul>
+                                        <li>
+                                            <a href="https://it-it.facebook.com/pages/Universit%C3%A0-della-Calabria/166678814380"
+                                               aria-label="Facebook"
+                                               target="_blank">
+                                                <svg class="icon">
+                                                    <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/UnicalPortale"
+                                               target="_blank"
+                                               aria-label="Twitter">
+                                                <svg class="icon">
+                                                <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/unical_official/"
+                                               target="_blank"
+                                               aria-label="Twitter">
+                                                <svg class="icon">
+                                                <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/channel/UCnd5Oen95TMO9aLfVRUAABQ"
+                                               aria-label="YouTube"
+                                               target="_blank">
+                                                <svg class="icon">
+                                                    <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-youtube"></use>
+                                                </svg><span class="sr-only">YouTube</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/UniversitaDellaCalabria"
+                                               aria-label="Github"
+                                               target="_blank">
+                                                <svg class="icon">
+                                                    <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-github"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                #*
+                                <div class="it-search-wrapper">
+                                    <span class="d-none d-md-block">
+                                        Cerca
+                                    </span>
+
+                                    <a class="search-link rounded-icon" href="#" aria-label="Cerca">
+                                        <svg class="icon">
+                                            <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-search"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                *#
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main menu -->
+        <div class="it-header-navbar-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg has-megamenu">
+                            <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                                <svg class="icon">
+                                    <use xlink:href="$request.getContextPath()/bootstrap-italia/svg/sprite.svg#it-burger"></use>
+                                </svg>
+                            </button>
+                            <div class="navbar-collapsable" id="nav10">
+                                <div class="overlay"></div>
+                                <div class="close-div sr-only">
+                                    <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                                </div>
+                                <div class="menu-wrapper">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link"
+                                               href="#springMessageText("menu.url.1","#")">
+                                                <span>#springMessage("menu.item.1")</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
